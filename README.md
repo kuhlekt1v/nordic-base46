@@ -48,6 +48,8 @@ Plug 'AlexvZyl/nordic.nvim', { 'branch': 'main' }
 
 # 🚀 Usage
 
+## Standalone Neovim Theme
+
 Using vim:
 
 ```vim
@@ -79,6 +81,42 @@ local palette = require('nordic.colors')
 ```
 > [!WARNING]
 > Please make sure that `require('nordic.colors')` is called *after* setup, otherwise the colors might be wrong for your config.
+
+## Using with NvChad (base46)
+
+This theme is also available as a base46 theme for [NvChad](https://nvchad.com/).
+
+### Installation
+
+1. Copy the theme file to your NvChad custom config:
+   ```bash
+   # Navigate to your NvChad config directory
+   cd ~/.config/nvim/lua/
+
+   # Create themes directory if it doesn't exist
+   mkdir -p themes
+
+   # Copy the nordic theme file
+   cp /path/to/nordic-base46/lua/base46/themes/nordic.lua themes/
+   ```
+
+2. Configure NvChad to use the Nordic theme in your `chadrc.lua`:
+   ```lua
+   local M = {}
+
+   M.ui = {
+     theme = "nordic",
+     -- other ui settings...
+   }
+
+   return M
+   ```
+
+3. Restart Neovim or run `:NvChadUpdate` to apply the theme.
+
+### Using the Theme Switcher
+
+You can also switch to the Nordic theme using NvChad's built-in theme switcher by pressing `<leader>th` and selecting "nordic" from the list.
 
 # ⚙️ Configuration
 
