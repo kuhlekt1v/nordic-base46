@@ -46,14 +46,14 @@ M.base_16 = {
   base05 = "#C0C8D8", -- default foreground (white0_reduce_blue)
   base06 = "#D8DEE9", -- white1
   base07 = "#E5E9F0", -- white2
-  base08 = "#BF616A", -- red
-  base09 = "#D08770", -- orange
-  base0A = "#EBCB8B", -- yellow
-  base0B = "#A3BE8C", -- green
-  base0C = "#8FBCBB", -- cyan
-  base0D = "#81A1C1", -- blue
-  base0E = "#B48EAD", -- magenta/purple
-  base0F = "#D08770", -- orange (alternate)
+  base08 = "#88C0D0", -- variables (cyan/frost instead of red)
+  base09 = "#81A1C1", -- integers, booleans (blue instead of orange)
+  base0A = "#EBCB8B", -- classes, types (yellow)
+  base0B = "#A3BE8C", -- strings (green)
+  base0C = "#8FBCBB", -- support, regex (cyan)
+  base0D = "#81A1C1", -- functions, methods (blue)
+  base0E = "#B48EAD", -- keywords (purple/magenta)
+  base0F = "#D08770", -- deprecated, special (orange)
 }
 
 M.polish_hl = {
