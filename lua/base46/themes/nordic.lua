@@ -62,24 +62,26 @@ M.polish_hl = {
     ["@punctuation.delimiter"] = { fg = M.base_30.white },
   },
 
-  -- NvimTree: Change root folder to orange instead of red
-  NvimTreeRootFolder = { fg = M.base_30.orange, bold = true },
+  defaults = {
+    -- NvimTree: Change root folder to orange instead of red
+    NvimTreeRootFolder = { fg = M.base_30.orange, bold = true },
 
-  -- Statusline: Update colors for better contrast
-  StatusLine = { fg = M.base_30.white, bg = M.base_30.one_bg2 },
-  StatusLineNC = { fg = M.base_30.grey_fg, bg = M.base_30.one_bg },
+    -- Statusline: Update colors for better contrast
+    StatusLine = { fg = M.base_30.white, bg = M.base_30.one_bg2 },
+    StatusLineNC = { fg = M.base_30.grey_fg, bg = M.base_30.one_bg },
 
-  -- Which-Key: Match the reference image colors
-  -- Short keys = light orange
-  WhichKey = { fg = M.base_30.sun, bold = true },
-  -- Groups = darker orange
-  WhichKeyGroup = { fg = M.base_30.orange, bold = true },
-  -- Immediate commands/descriptions = grey
-  WhichKeyDesc = { fg = M.base_30.grey_fg2 },
-  WhichKeySeparator = { fg = M.base_30.grey },
-  WhichKeyFloat = { bg = M.base_30.one_bg2 },
-  WhichKeyBorder = { fg = M.base_30.grey, bg = M.base_30.one_bg2 },
-  WhichKeyValue = { fg = M.base_30.grey_fg },
+    -- Which-Key: Match the reference image colors
+    -- Short keys = light orange
+    WhichKey = { fg = M.base_30.sun, bold = true },
+    -- Groups = darker orange
+    WhichKeyGroup = { fg = M.base_30.orange, bold = true },
+    -- Immediate commands/descriptions = grey
+    WhichKeyDesc = { fg = M.base_30.grey_fg2 },
+    WhichKeySeparator = { fg = M.base_30.grey },
+    WhichKeyFloat = { bg = M.base_30.one_bg2 },
+    WhichKeyBorder = { fg = M.base_30.grey, bg = M.base_30.one_bg2 },
+    WhichKeyValue = { fg = M.base_30.grey_fg },
+  },
 }
 
 M.type = "dark"
